@@ -1,38 +1,443 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Baloo Bhai 2';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-li-itom {
+  list-style: none;
+  padding: 0.4rem 0.5rem;
+}
+
+.nav-li-itom a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Baloo Bhai 2';
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+}
+
+.nav-li-itom :hover {
+  cursor: pointer;
+  background-color: rgb(189, 188, 188);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+
+  .nav-ul {
+      display: grid;
+      gap: 10px 10px;
+      grid-template-columns: 50% 50%;
+      text-align: center;
+  }
+
+  .nav-li-itom {
+      list-style: none;
+      background-color: rgb(189, 188, 188);
+      height: 3rem;
+      width: 10rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-img{
+  background-image:url('./images/IMGbg.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+@media only screen and (min-width : 2600px ){
+  .bg-img{
+    height: 90rem;
+  }
+}
+
+.bg{
+  display:flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding-top: 4rem;
+}
+
+
+.home{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:center;
+  justify-items: center;
+  /* border: 2px solid red; */
+}
+
+#hi{
+  color: rgb(255, 255, 255);
+  width: 10rem;
+  margin-right: 15rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+}
+.title{
+  color: white;
+  width: 27rem;
+  margin-right: 15rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.spanh{
+  color: rgb(255, 187, 0);
+}
+.homepara{
+  color: white;
+  width: 30rem;
+  margin-right: 15rem;
+  margin-top: 1rem;
+}
+.buttoncon{
+  width: 25rem;
+  margin-right: 15rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.button{
+  width: 10rem;
+  border-radius: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.b1{
+  background-color:  rgb(255, 166, 0);
+  color: white;
+  border: 1px solid rgb(255, 166, 0);
+}
+#idb1{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.b2{
+  background-color:  rgb(65, 64, 64);
+  color:rgb(255, 166, 0);
+  border: 1px solid rgb(255, 166, 0);
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.b1:hover{
+  background-color:rgb(65, 64, 64);
 }
+
+.b2:hover{
+  background-color:rgb(255, 166, 0);
+  color: white;
+  text-decoration: none;
+}
+/* ------------------------------------------------------------------------------- */
+
+/* css for about page */
+.about{
+  background-color:rgb(41, 39, 39) ;
+  
+}
+.abhead{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.headtext1{
+  color: white;
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.headtext2{
+  color: rgb(255, 166, 0);
+}
+.hsubtxt{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.about2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid rgb(255, 166, 0);
+}
+.abimg{
+  height: 20rem;
+  border-bottom: 5px solid rgb(255, 166, 0);
+  border-right: 5px solid rgb(255, 166, 0);
+}
+.tablekey{
+  color: white;
+  /* border: 2px solid white; */
+  margin: 30px 10px;
+}
+.tabledata{
+  color: rgb(221, 221, 221);
+  margin-left: 15px;
+}
+.about3{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.edu{
+  width: 40%;
+  padding-left: 2rem;
+  border-left: 1px solid rgb(255, 166, 0);
+}
+.eduname{
+  color: rgb(255, 166, 0);
+  margin: 0;
+}
+.fname{
+  color: aliceblue;
+}
+.spe,.clg{
+  margin: 0;
+}
+.oneblock{
+  margin: 20px 0px;
+}
+.date{
+  display: list-item;
+
+  font-size: 15px;
+  margin: 0.5rem;
+}
+.about4{
+  color: white;
+  margin: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+}
+.ab4title{
+  color: white;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 166, 0);
+}
+.con4 {
+  width: 95%; 
+  background-color: #ddd; 
+}
+.skills {
+  text-align: right;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: white;
+}
+.html {
+  width: 80%; 
+  background-color: rgb(255, 166, 0);
+}
+.css {
+  width: 75%; 
+  background-color: rgb(255, 166, 0);
+}
+.js {
+  width: 65%; 
+  background-color: rgb(255, 166, 0);
+}
+.react {
+  width: 50%; 
+  background-color: rgb(255, 166, 0);
+}
+.c {
+  width: 80%; 
+  background-color: rgb(255, 166, 0);
+}
+.cpp {
+  width: 70%; 
+  background-color: rgb(255, 166, 0);
+}
+.py {
+  width: 60%; 
+  background-color: rgb(255, 166, 0);
+}
+.git1 {
+  width: 90%; 
+  background-color: rgb(255, 166, 0);
+}
+.node {
+  width: 60%; 
+  background-color: rgb(255, 166, 0);
+}
+
+.cvbut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+/* css for contact page */
+.mb-31{
+  display: flex;
+}
+.contact{
+  background-color: rgb(41, 39, 39);
+  color: white;
+}
+.conh{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* border: 2px solid red; */
+}
+.conhsub{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+ }
+.conh1{
+  font-size: 4rem;
+  margin: 0;
+}
+.conh2{
+  font-size: 4rem;
+  color: rgb(255, 166, 0);
+}
+.con1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  
+}
+.acc-title{
+  font-size: 15px;
+  margin: 0.3rem;
+}
+.acc-id{
+  font-size: 20px;
+  margin: 0.3rem;
+}
+.coninfo{
+  margin: 0px 4rem;
+}
+.conform{
+  width: 40rem;
+  margin: 0px 4rem;
+}
+.fomb{
+  padding: 20px 0px;
+}
+.acc{
+  margin-top: 18px;
+}
+
+.bot{
+  width: 1rem;
+}
+.msgend{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.msgend1{
+  color: rgb(255, 166, 0);
+}
+.line{
+  border-bottom: 2px solid rgb(255, 166, 0);
+  margin-bottom: 2rem;
+}
+.linebg{
+  background-color: rgb(41, 39, 39);
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.main-form{
+  font-family: 'baloo bhai 2';
+  /* border: 2px solid rgb(24, 24, 24); */
+  /* background-color: rgb(238, 238, 238); */
+  width: 60%;
+  border-radius: 4px;
+}
+.form-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.form-title-container h1{
+  margin: 0;
+}
+.form-name{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 0.8rem;
+}
+.form-mail{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 0.8rem;
+}
+
+.form-text{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 1rem;
+  /* background-color: rgb(238, 238, 238); */
+}
+.form-text textarea{
+  resize: vertical;
+  background-color: rgb(65, 64, 64);
+  border-radius: 4px;
+  border: 1.5px solid rgb(255, 166, 0);
+}
+.form-body{
+  display: flex;
+  padding: 10px 1rem;
+  /* background-color: rgb(238, 238, 238); */
+}
+.form-size-style{
+  height: 1.4rem;
+  border: 1.5px solid rgb(255, 166, 0);
+  border-radius: 4px;
+  background-color: rgb(65, 64, 64);
+}
+.form-button-container{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.form-button{
+  padding: 0.5rem 3rem;
+  border: 2px solid rgb(255, 166, 0);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form-button:hover{
+  background-color: rgb(65, 64, 64);
+}
+
